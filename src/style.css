@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: #f55a5a;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.header-text {
+  font-size: 14.46px;
+  font-weight: 500;
+  font-family: Inter;
+  padding-left: 0.5em;
+  color: white;
+  line-height: 17.5px;
+  letter-spacing: -7.5%;
+  position: absolute;
+  top: 1.2em;
+}
+
+/* Content Main */
+.content-main {
+  width: 550px;
+  /* height: 444px; */
+  background-color: white;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+
+/* Activities */
+.img-VS-content {
+  width: 471px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+.image {
+  /* display: block; */
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+
+.places {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 5px;
+}
+
+.places > img {
+  width: 7px;
+}
+
+.places > p{
+  display: inline-block;
+  font-family: Inter;
+  font-size: 10.24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #2B283A;
+  /* padding: auto 10px; */
+}
+
+.places > a {
+  font-family: Inter;
+  font-size: 10.24px;
+  color: #918E9B;
+} 
+
+.visits {
+  font-family: Inter;
+  color: #2B283A;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0.3em 0;
+}
+
+.dates {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.description {
+  font-family: Inter;
+  font-size: 13.24px;
+  margin-top: 1em;
+}
+
+
+
