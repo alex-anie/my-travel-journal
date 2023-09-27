@@ -2,6 +2,7 @@ import Activities from "./Activities"
 
 // Exter API resourses
 import API from "../api"
+import SideNavbar from "./SideNavbar";
 
 export default function Content(){
 
@@ -15,11 +16,16 @@ export default function Content(){
       });
 
     return (
+      <>
         <main className="content-main">
-            <section className="content-section">
-                {/* <Activities  /> */}
-                {apiObject}
-            </section>
+          <section className="content-section">
+            {/* <Activities  /> */}
+            {apiObject}
+          </section>
         </main>
-    )
+        <section>
+          <SideNavbar />
+        </section>
+      </>
+    );
 }

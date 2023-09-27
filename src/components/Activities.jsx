@@ -1,8 +1,9 @@
 import loca from "../assets/loca.svg"
 
-
-
 export default function Activities(props){
+
+  const str = props.title.replace(/\s/g, "");
+  
     return (
       <div>
         <section>
@@ -17,9 +18,11 @@ export default function Activities(props){
                 <p>{props.location}</p>
                 <a href={props.googleMapsUrl}>View on Google Maps</a>
               </div>
-              <h1 className="visits">{props.title}</h1>
-              <h4 className="dates">
-                {props.startDate} - {props.endDate}
+              <h1 className="visits">
+                <a href={`#${str}`}>{props.title}</a>
+              </h1>
+              <h4 className="dates" id={`${str}`}>
+                {props.startDate} - {props.endDate} 
               </h4>
               <p className="description">{props.description}</p>
             </div>
