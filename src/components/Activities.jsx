@@ -8,7 +8,7 @@ export default function Activities(props){
       <div>
         <section>
           <aside className="img-VS-content">
-            <div>
+            <div className="image-wrapper">
               <img src={props.imageUrl} alt="" className="image" />
             </div>
 
@@ -16,7 +16,7 @@ export default function Activities(props){
               <div className="places">
                 <img src={loca} alt="" />
                 <p>{props.location}</p>
-                <a href={props.googleMapsUrl}>View on Google Maps</a>
+                <a href={props.googleMapsUrl} className="google-map-link">View on Google Maps</a>
               </div>
               <h1 className="visits">
                 <a href={`#${str}`}>{props.title}</a>
